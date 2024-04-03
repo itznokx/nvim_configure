@@ -3,8 +3,6 @@ vim.keymap.set("n","<leader>ee", vim.cmd.Ex)
 vim.keymap.set('n','<C-s>', vim.cmd.w)
 vim.keymap.set('i','<C-v>','<C-R><Char-43>')
 
-vim.keymap.set('n','<C-kEnter>','o')
-
 vim.keymap.set('n','<Esc><Esc>',':q')
 
 vim.keymap.set('n','<C-f>','/') -- find word
