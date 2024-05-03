@@ -6,6 +6,10 @@ require ("nokx")
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+vim.cmd("set shiftwidth=3")
+vim.cmd("set tabstop=3")
+
+
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
 
