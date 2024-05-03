@@ -1,9 +1,10 @@
 vim.g.mapleader = " "
-vim.keymap.set("n","<leader>ee", vim.cmd.Ex)
+vim.keymap.set("n","<leader>ee", vim.cmd.NvimTreeOpen)
+vim.keymap.set("n","<C-w>e",vim.cmd.NvimTreeClose)
 vim.keymap.set('n','<C-s>', vim.cmd.w)
 vim.keymap.set('i','<C-v>','<C-R><Char-43>')
 
-vim.keymap.set('n','<Esc><Esc>',':q')
+vim.keymap.set('n','<Esc><Esc>',':q<Enter>')
 
 vim.keymap.set('n','<C-f>','/') -- find word
 
@@ -24,3 +25,5 @@ vim.keymap.set('n','<M-Right>','<C-w>l') -- WIndow Right
 
 vim.keymap.set('n','<C-Left>','<C-w>R') -- Move actual Win backwards
 vim.keymap.set('n','<C-Right>','<C-w>r') -- Move actual Win frontward
+
+vim.keymap.set('n','<S-t>', vim.cmd.terminal)
