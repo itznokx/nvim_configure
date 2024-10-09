@@ -19,9 +19,7 @@ return require('packer').startup(function(use)
 		 ts_update()
 	 end,
  }
- use { "zootedb0t/citruszest.nvim"}
  use {'nvim-treesitter/playground'}
- use {'xiyaowong/transparent.nvim'}
  use {'nvim-lua/plenary.nvim'}
  use {'theprimeagen/harpoon',require("harpoon").setup({
  	global_settings = {
@@ -55,6 +53,17 @@ return require('packer').startup(function(use)
     'nvim-tree/nvim-web-devicons', -- optional
   },
 }
+-- Nvim Themes
+use { "zootedb0t/citruszest.nvim"} -- Citruszest
+use { "scottmckendry/cyberdream.nvim",require("cyberdream").setup({
+	transparent=true,
+	borderless_telescope=false,
+	extensions = {
+		telescope=true,
+		treesitter=true,
+	}
+})
+} -- Cyberdream
  end)
 --hype
 

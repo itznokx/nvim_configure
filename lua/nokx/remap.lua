@@ -4,7 +4,9 @@ vim.keymap.set("n","<C-w>e",vim.cmd.NvimTreeClose)
 vim.keymap.set('n','<C-s>', vim.cmd.w)
 vim.keymap.set('i','<C-v>','<C-R><Char-43>')
 
-vim.keymap.set('n','<Esc><Esc>',':q<Enter>')
+vim.keymap.set('n','<C-Enter>','o')
+
+vim.keymap.set('n','<C-w><Esc>',':q<Enter>')
 
 vim.keymap.set('n','<C-f>','/') -- find word
 
@@ -13,6 +15,12 @@ vim.keymap.set('v','<C-c>','y')-- copy in visual mode
 
 vim.keymap.set('n','<C-z>','u') -- Undo
 vim.keymap.set('n','<S-z>','<C-R>') -- Redo
+-- Resize Window
+vim.keymap.set("n", "+", [[<cmd>vertical resize +5<cr>]]) 
+vim.keymap.set("n", "_", [[<cmd>vertical resize -5<cr>]]) 
+vim.keymap.set("n", "=", [[<cmd>horizontal resize +2<cr>]]) 
+vim.keymap.set("n", "-", [[<cmd>horizontal resize -2<cr>]])
+
 -- Multi Window configuration
 
 vim.keymap.set('n','<M-PageUp>','<C-w>w') -- Next Window
@@ -26,4 +34,5 @@ vim.keymap.set('n','<M-Right>','<C-w>l') -- WIndow Right
 vim.keymap.set('n','<C-Left>','<C-w>R') -- Move actual Win backwards
 vim.keymap.set('n','<C-Right>','<C-w>r') -- Move actual Win frontward
 
-vim.keymap.set('n','<S-t>', vim.cmd.terminal)
+vim.keymap.set('n','<S-t>', vim.cmd.terminal) -- open terminal
+vim.keymap.set('t','<Esc>','<C-Char-92><C-N>') -- exit terminal mode
