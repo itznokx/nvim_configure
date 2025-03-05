@@ -11,27 +11,30 @@ local ensure_packer = function()
 end
 local load_packer = ensure_packer()
 
-
--- Start init config lua
+  -- Start init config lua
+if (ensure_packer==false) then
+  print("Packer not installed run ./config.sh")
+else
 require ("nokx")
--- Update all plugins
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
--- optionally enable 24-bit colour
-vim.opt.termguicolors = true
+  -- Update all plugins
+  vim.g.loaded_netrw = 1
+  vim.g.loaded_netrwPlugin = 1
+  -- optionally enable 24-bit colour
+  vim.opt.termguicolors = true
 
--- Nvim-tree require with config
-require("nvim-tree").setup({
-  sort = {
-    sorter = "case_sensitive",
-  },
-  view = {
-    width = 30,
-  },
-  renderer = {
-    group_empty = true,
-  },
-  filters = {
-    dotfiles = false,
-  },
-})
+  -- Nvim-tree require with config
+  require("nvim-tree").setup({
+    sort = {
+      sorter = "case_sensitive",
+    },
+    view = {
+      width = 30,
+    },
+    renderer = {
+      group_empty = true,
+    },
+    filters = {
+      dotfiles = false,
+    },
+  })
+end
