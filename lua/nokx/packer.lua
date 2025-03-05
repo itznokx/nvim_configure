@@ -36,7 +36,7 @@ use {"xiyaowong/transparent.nvim"}
 use { "zootedb0t/citruszest.nvim"} -- Citruszest
 use { "scottmckendry/cyberdream.nvim" } -- Cyberdream
 -- Status Line
-use {'ojroques/nvim-hardline'}
+use {'tamton-aquib/staline.nvim'}
 --[[
 use { "scottmckendry/cyberdream.nvim",require("cyberdream").setup({
 	transparent=true,

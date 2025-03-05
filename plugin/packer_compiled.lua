@@ -89,11 +89,6 @@ _G.packer_plugins = {
     path = "/home/nokx/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/catgoose/nvim-colorizer.lua"
   },
-  ["nvim-hardline"] = {
-    loaded = true,
-    path = "/home/nokx/.local/share/nvim/site/pack/packer/start/nvim-hardline",
-    url = "https://github.com/ojroques/nvim-hardline"
-  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/nokx/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
@@ -123,6 +118,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/nokx/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["staline.nvim"] = {
+    loaded = true,
+    path = "/home/nokx/.local/share/nvim/site/pack/packer/start/staline.nvim",
+    url = "https://github.com/tamton-aquib/staline.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
