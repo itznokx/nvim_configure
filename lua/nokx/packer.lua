@@ -35,6 +35,8 @@ use {"xiyaowong/transparent.nvim"}
 -- Nvim Themes
 use { "zootedb0t/citruszest.nvim"} -- Citruszest
 use { "scottmckendry/cyberdream.nvim" } -- Cyberdream
+-- Status Line
+use {'ojroques/nvim-hardline'}
 --[[
 use { "scottmckendry/cyberdream.nvim",require("cyberdream").setup({
 	transparent=true,

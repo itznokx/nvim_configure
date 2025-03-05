@@ -15,7 +15,7 @@ local load_packer = ensure_packer()
 if (ensure_packer==false) then
 	print("Packer not installed run ./config.sh")
 else
-require ("nokx")
+	require ("nokx")
   -- Update all plugins
   vim.cmd("PackerInstall")
   vim.cmd("PackerSync")
@@ -23,7 +23,9 @@ require ("nokx")
   vim.g.loaded_netrwPlugin = 1
   -- optionally enable 24-bit colour
   vim.opt.termguicolors = true
-
+  require('hardline').setup {
+	
+  }
   -- Nvim-tree require with config
   require("nvim-tree").setup({
     sort = {

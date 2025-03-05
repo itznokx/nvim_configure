@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/nokx/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/catgoose/nvim-colorizer.lua"
   },
+  ["nvim-hardline"] = {
+    loaded = true,
+    path = "/home/nokx/.local/share/nvim/site/pack/packer/start/nvim-hardline",
+    url = "https://github.com/ojroques/nvim-hardline"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/nokx/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
