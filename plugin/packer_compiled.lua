@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/nokx/.local/share/nvim/site/pack/packer/start/cyberdream.nvim",
     url = "https://github.com/scottmckendry/cyberdream.nvim"
   },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/home/nokx/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/catgoose/nvim-colorizer.lua"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/nokx/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
@@ -118,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/nokx/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["transparent.nvim"] = {
+    loaded = true,
+    path = "/home/nokx/.local/share/nvim/site/pack/packer/start/transparent.nvim",
+    url = "https://github.com/xiyaowong/transparent.nvim"
   }
 }
 

@@ -44,3 +44,5 @@ vim.keymap.set('n','<s-up>',[[<cmd>move-2<cr>]]) -- up line (normal mode)
 vim.keymap.set('n','<S-Down>',[[<cmd>move +1<cr>]]) -- Down line (normal mode)
 
 vim.keymap.set('i','<C-j>','<C-O>o')
+
+vim.keymap.set('n','<leader>tt',[[<cmd>TransparentToggle<cr>]])

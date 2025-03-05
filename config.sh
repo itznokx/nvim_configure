@@ -9,4 +9,4 @@ echo "Install ripgrep"
 sudo pacman -S ripgrep
 
 echo "Sync Packer plugins"
-nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerInstall'

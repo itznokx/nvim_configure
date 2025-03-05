@@ -28,6 +28,10 @@ return require('packer').startup(function(use)
     'nvim-tree/nvim-web-devicons', -- optional
   },
 }
+-- Color representation for HEX CODES
+use("catgoose/nvim-colorizer.lua")
+-- Transparent Backgrounds
+use {"xiyaowong/transparent.nvim"}
 -- Nvim Themes
 use { "zootedb0t/citruszest.nvim"} -- Citruszest
 use { "scottmckendry/cyberdream.nvim" } -- Cyberdream

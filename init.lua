@@ -13,10 +13,12 @@ local load_packer = ensure_packer()
 
   -- Start init config lua
 if (ensure_packer==false) then
-  print("Packer not installed run ./config.sh")
+	print("Packer not installed run ./config.sh")
 else
 require ("nokx")
   -- Update all plugins
+  vim.cmd("PackerInstall")
+  vim.cmd("PackerSync")
   vim.g.loaded_netrw = 1
   vim.g.loaded_netrwPlugin = 1
   -- optionally enable 24-bit colour
